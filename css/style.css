@@ -1,0 +1,143 @@
+/* COLOR SCHEME:
+    1) Main Text - #FAED26
+    2) Main Background - #46344E
+    3) Seconday Background - #5A5560
+    4) Button Colors - #9D8D8F
+    5) Button Text - #9B786F
+*/
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #333333;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background-image: url("../img/mulligans4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ContentContainer {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+#title {
+  font-size: 90px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 5px rgba(35, 35, 35, 1.0);
+}
+
+#subtitle {
+  font-size: 27px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 5px rgba(35, 35, 35, 1.0);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 3.5em;
+}
+
+#title-button {
+  box-shadow: 3px 3px 2px rgba(35, 35, 35, 1.0);
+  font-size: 25px;
+}
+
+#title-button:active {
+  color: black;
+}
+
+.navbar-brand {
+  margin-right: 3em;
+  margin-left: 1.5em;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.nav-link {
+  margin: 0 5px;
+}
+
+.Content {
+  color: #FFFFFF;
+}
+
+.dropdown-menu {
+  background-color: #393a3d;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
+	animation: color-change-2x 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+hr {
+  border: 2px solid #333333;
+}
